@@ -15,4 +15,14 @@ public class StudentController {
                 .build();
         return student;
     }
+
+    @GetMapping("/student2")
+    public Student getStudent2() {
+        Student student = Student.builder()
+                .name("Milosz2")
+                .secondName("Mazurek2")
+                .age(172)
+                .build();
+        return student;
+    }
 }
